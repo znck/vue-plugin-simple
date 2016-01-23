@@ -21,13 +21,8 @@
     },
     "coveralls_token": {
       "type": "string",
-      "label": "coveralls.io repo_token (code coverage service)",
-      "default": ""
-    },
-    "licesne": {
-      "type": "string",
-      "label": "license",
-      "default": "MIT"
+      "label": "Coveralls.io REPO_TOKEN",
+      "default": "repo_token"
     }
   }
 }
