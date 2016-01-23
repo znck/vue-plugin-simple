@@ -1,0 +1,33 @@
+{
+  "schema": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "label": "Project name"
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "label": "Project description",
+      "default": "A Vue.js project"
+    },
+    "author": {
+      "type": "string",
+      "label": "Author"
+    },
+    "private": {
+      "type": "boolean",
+      "default": true
+    },
+    "coveralls_token": {
+      "type": "string",
+      "label": "coveralls.io repo_token (code coverage service)",
+      "default": ""
+    },
+    "licesne": {
+      "type": "string",
+      "label": "license",
+      "default": "MIT"
+    }
+  }
+}
