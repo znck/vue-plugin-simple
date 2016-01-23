@@ -5,14 +5,14 @@
   "jsnext": "dist/{{ name }}.js",
   "main": "dist/{{ name }}.common.js",
 {{#private}}
-  "private": true
+  "private": true,
 {{/private}}
   "directories": {
     "test": "test"
   },
   "scripts": {
     "build": "mkdir -p dist && NODE_ENV=production node config/rollup.config.js",
-    "dev": "webpack-dev-server --quiet --config config/webpack.dev.conf.js --host 0.0.0.0",
+    "dev": "webpack-dev-server --quiet --config config/webpack.dev.config.js --host localhost",
     "lint": "eslint --plugin html **/*.js **/*.vue",
     "test": "npm run lint && npm run unit",
     "unit": "COVERALLS_REPO_TOKEN='{{ coveralls_token }}' karma start config/karma.config.js",
@@ -34,6 +34,7 @@
     "css-loader": "^0.23.1",
     "es6-promise": "latest",
     "eslint": "^1.10.3",
+    "eslint-loader": "^1.2.0",
     "eslint-plugin-html": "^1.2.0",
     "expect.js": "^0.3.1",
     "function-bind": "latest",
@@ -58,6 +59,7 @@
     "vue-loader": "^8.0.3",
     "vue-style-loader": "^1.0.0",
     "vueify-insert-css": "^1.0.0",
-    "webpack": "^1.12.12"
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
   }
 }

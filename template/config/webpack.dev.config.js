@@ -1,10 +1,10 @@
 var webpack = require('webpack')
 
 module.exports = {
-  entry: 'mocha!./test/index.js',
+  entry: 'mocha!./test/unit/index.js',
   output: {
     path: './test',
-    filename: 'specs.js',
+    filename: '__dev.js',
     publicPath: '/'
   },
   devtool: 'source-map',
@@ -17,7 +17,7 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       exclude: /node_modules|vue\/dist/,
-      loader: 'babel',
+      loader: 'vue',
       query: {
         presets: ['es2015'],
         plugins: [
