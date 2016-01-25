@@ -41,15 +41,10 @@ $ npm install
   - Easy [mock injection](http://vuejs.github.io/vue-loader/workflow/testing-with-mocks.html).
   - Code coverage with [istanbul](https://github.com/gotwarlost/istanbul) and [coveralls](http://coveralls.io/).
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
-- `npm run lint`: List .js/.vue wth eslint.
-	- Supports ES2015 in all files.
+- `npm run lint`: Lint .js/.vue wth eslint.
+   - Supports ES2015 in all files.
 	
 - `npm test`: Run lint and then unit.
 	
 - `npm run clean`: Delete coverage and dist directory.
-
-## License
-
-[MIT](http://opensource.org/licenses/MIT)
