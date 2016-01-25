@@ -1,0 +1,19 @@
+{
+  "gitbook": "2.x.x",
+  "plugins": ["edit-link", "prism", "-highlight", "github"],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/znck/vue-plugin/tree/gh-pages/",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/znck/vue-plugin/"
+    }
+  },
+  "links": {
+    "sharing": {
+      "facebook": false,
+      "twitter": false
+    }
+  }
+}
