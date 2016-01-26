@@ -15,7 +15,7 @@
     "dev": "webpack-dev-server --quiet --config config/webpack.dev.config.js --host localhost",
     "lint": "eslint --plugin html **/*.js **/*.vue",
     "test": "npm run lint && npm run unit",
-    "unit": "COVERALLS_REPO_TOKEN='{{ coveralls_token }}' karma start config/karma.config.js",
+    "unit": "karma start config/karma.config.js",
     "clean": "rm -rf dist coverage"
   },
   "author": "{{ author }}",

@@ -10,14 +10,18 @@ const chai = require('chai')
 describe('Component Hello', function () {
   let vm
 
-  beforeEach(function () {
-    vm = new Vue({
-      template: '<div><hello></hello></div>',
-      components: {Hello}
-    }).$mount()
-  })
+  vm = new Vue({
+    template: '<div><hello></hello></div>',
+    components: {Hello}
+  }).$mount()
+
+  console.warn(JSON.parse(JSON.stringify(vm.$data)))
 
   it('should render correctly.', function () {
+    expect(vm.$el.querySelectorAll('#greetings')).have.length(1)
+  })
+
+  it('should should have name', function () {
     expect(vm.$el.querySelector('#greetings').textContent).to.equal('Hello! John Doe')
   })
 })

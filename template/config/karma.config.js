@@ -1,3 +1,28 @@
+var vue = {
+  test: /\.vue$/,
+  loader: 'vue'
+}
+var babel = {
+  test: /\.js$/,
+  exclude: /(node_modules|dist)/,
+  loader: 'babel',
+  query: {
+    presets: ['es2015'],
+    plugins: [
+      ['babel-plugin-espower']
+    ]
+  }
+}
+var json = {
+  test: /\.json$/,
+  loader: 'json'
+}
+var istanbul = {
+  test: /\.js$/,
+  exclude: /(test|node_modules|dist)/,
+  loader: 'istanbul-instrumenter'
+}
+
 // Karma configuration
 module.exports = function (config) {
   config.set({
@@ -5,14 +30,12 @@ module.exports = function (config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
-    // frameworks to use
+    // Frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['mocha', 'chai'],
 
     // list of files / patterns to load in the browser
-    files: [
-      '../test/unit/index.js'
-    ],
+    files: ['../test/unit/index.js'],
 
     // list of files to exclude
     exclude: [],
@@ -26,28 +49,8 @@ module.exports = function (config) {
     webpack: {
       devtool: 'source-map',
       module: {
-        loaders: [{
-          test: /\.vue$/,
-          loader: 'vue'
-        }, {
-          test: /\.js$/,
-          exclude: /node_modules|vue\/dist/,
-          loader: 'babel',
-          query: {
-            presets: ['es2015'],
-            plugins: [
-              ['babel-plugin-espower']
-            ]
-          }
-        }],
-        postLoaders: [{
-          test: /\.json$/,
-          loader: 'json'
-        }, {
-          test: /\.js$/,
-          exclude: /test|node_modules|vue\/dist/,
-          loader: 'istanbul-instrumenter'
-        }]
+        loaders: [vue, babel],
+        postLoaders: [json, istanbul]
       }
     },
 
