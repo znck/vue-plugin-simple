@@ -10,7 +10,7 @@ Template to create vue plugin or shareable components.
     - rollup
 - Test Assertion
     - chai
-- Test Fremework
+- Test Framework
     - mocha
 - Test Runner
     - karma
