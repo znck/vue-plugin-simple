@@ -1,2 +1,0 @@
-# Add repo_token to push coverage results.
-repo_token: {{ coveralls_token }}

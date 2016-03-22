@@ -18,8 +18,8 @@
     "unit": "karma start config/karma.config.js",
     "clean": "rm -rf dist coverage"
   },
-  "author": "{{ author }}",
-  "license": "{{ license }}",
+  "author": "{{ venore }} <{{ author_email }}>",
+  "license": "MIT",
   "dependencies": {
     "vue": "latest"
   },

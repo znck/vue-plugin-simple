@@ -1,6 +1,6 @@
 {
   "schema": {
-    "name": {
+    "package_name": {
       "type": "string",
       "required": true,
       "label": "Project name"
@@ -11,18 +11,21 @@
       "label": "Project description",
       "default": "A Vue.js project"
     },
-    "author": {
+    "vendor": {
       "type": "string",
-      "label": "Author"
+      "label": "Github Username"
+    },
+    "author_name": {
+      "type": "string",
+      "label": "Author Name"
+    },
+    "author_email": {
+      "type": "string",
+      "label": "Author Email"
     },
     "private": {
       "type": "boolean",
       "default": true
     },
-    "coveralls_token": {
-      "type": "string",
-      "label": "Coveralls.io REPO_TOKEN",
-      "default": "repo_token"
-    }
   }
 }
