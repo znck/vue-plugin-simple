@@ -70,11 +70,6 @@ The above command pulls this template, prompts for some information, and generat
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
-## Testing
-
-``` bash
-$ composer test
-```
 
 ## Contributing
 
