@@ -1,5 +1,6 @@
 # Vue Plugin Skeleton
-Template to create vue plugin or shareable components. The purpose of this Vue project templates is to provide opinionated, battery-included development tooling setups so that users can get started with actual app code as fast as possible.
+Template to create vue plugin or shareable components. The purpose of this Vue project templates is
+to provide a simple setups so that users can get started with actual plugin code as fast as possible.
 
 ![Vue Plugin Skeleton](cover.png)
 
@@ -24,47 +25,14 @@ Template to create vue plugin or shareable components. The purpose of this Vue p
 $ vue init znck/vue-plugin my-project
 $ cd demo-project
 $ npm install
+$ # or
+$ yarn
 ```
 The above command pulls this template, prompts for some information, and generates the project at `./my-project/`.
 
-## Using tools
-- Transpiler
-    - babel, coffee, jade, less, sass, stylus
-- Linter
-    - eslint
-- Bundler
-    - rollup
-- Test Assertion
-    - chai
-- Test Framework
-    - mocha
-- Test Runner
-    - karma
-- Test Coverage
-    - istanbul, coveralls
-- Headless Browser
-    - phantomjs
-
 ### What's Included
 
-- `npm run build`: CommonJS ready modules.
-  - HTML minified with [html-minifier](https://github.com/kangax/html-minifier).
-  - Packed with [rollup](http://rollupjs.org/).
-
-- `npm run unit`: Unit tests run in PhantomJS with Karma + karma-mocha + karma-webpack.
-  - Supports ES2015 in test files.
-  - Supports all webpack loaders.
-  - Easy [mock injection](http://vuejs.github.io/vue-loader/workflow/testing-with-mocks.html).
-  - Code coverage with [istanbul](https://github.com/gotwarlost/istanbul) and [coveralls](http://coveralls.io/).
-
-
-- `npm run lint`: Lint .js/.vue wth eslint.
-   - Supports ES2015 in all files.
-
-- `npm test`: Run lint and then unit.
-
-- `npm run clean`: Delete coverage and dist directory.
-
+> TODO: Update docs.
 
 ## Change log
 

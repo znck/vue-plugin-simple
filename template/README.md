@@ -29,6 +29,12 @@
 npm install --save {{ package_name }}
 ```
 
+or
+
+```
+yarn add {{ package_name }}
+```
+
 ## Change log
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.

@@ -22,10 +22,6 @@
     "author_email": {
       "type": "string",
       "label": "Author Email"
-    },
-    "private": {
-      "type": "boolean",
-      "default": true
-    },
+    }
   }
 }
