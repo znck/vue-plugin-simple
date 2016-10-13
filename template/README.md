@@ -1,38 +1,38 @@
-# {{ package_name }}
+# {{ name }}
 
 {{ description }}
 
 <p align="center">
-  <a href="https://circleci.com/gh/{{vendor}}/{{package_name}}">
-    <img src="https://circleci.com/gh/{{vendor}}/{{package_name}}.svg?style=svg" alt="Build Status" />
+  <a href="https://circleci.com/gh/{{vendor}}/{{name}}">
+    <img src="https://circleci.com/gh/{{vendor}}/{{name}}.svg?style=svg" alt="Build Status" />
   </a>
-  <a href="https://coveralls.io/github/{{vendor}}/{{package_name}}?branch=master">
-    <img src="https://coveralls.io/repos/github/{{vendor}}/{{package_name}}/badge.svg?branch=master&style=flat-square" alt="Coverage Status" />
+  <a href="https://coveralls.io/github/{{vendor}}/{{name}}?branch=master">
+    <img src="https://coveralls.io/repos/github/{{vendor}}/{{name}}/badge.svg?branch=master&style=flat-square" alt="Coverage Status" />
   </a>
   <a href="LICENSE">
     <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License" />
   </a>
-  <a href="https://npmjs.org/package/{{package_name}}">
-    <img src="https://img.shields.io/npm/v/{{package_name}}.svg?style=flat-square" alt="Packagist" />
+  <a href="https://npmjs.org/package/{{name}}">
+    <img src="https://img.shields.io/npm/v/{{name}}.svg?style=flat-square" alt="Packagist" />
   </a>
-  <a href="https://github.com/{{vendor}}/{{package_name}}/releases">
-    <img src="https://img.shields.io/github/release/{{vendor}}/{{package_name}}.svg?style=flat-square" alt="Latest Version" />
+  <a href="https://github.com/{{vendor}}/{{name}}/releases">
+    <img src="https://img.shields.io/github/release/{{vendor}}/{{name}}.svg?style=flat-square" alt="Latest Version" />
   </a>
 
-  <a href="https://github.com/{{vendor}}/{{package_name}}/issues">
-    <img src="https://img.shields.io/github/issues/{{vendor}}/{{package_name}}.svg?style=flat-square" alt="Issues" />
+  <a href="https://github.com/{{vendor}}/{{name}}/issues">
+    <img src="https://img.shields.io/github/issues/{{vendor}}/{{name}}.svg?style=flat-square" alt="Issues" />
   </a>
 </p>
 
 ### Installation
 ```
-npm install --save {{ package_name }}
+npm install --save {{ name }}
 ```
 
 or
 
 ```
-yarn add {{ package_name }}
+yarn add {{ name }}
 ```
 
 ## Change log
