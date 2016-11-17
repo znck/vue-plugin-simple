@@ -23,7 +23,7 @@ to provide a simple setups so that users can get started with actual plugin code
 
 ```sh
 $ vue init znck/vue-plugin my-project
-$ cd demo-project
+$ cd my-project
 $ npm install
 $ # or
 $ yarn
