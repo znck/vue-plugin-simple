@@ -4,12 +4,10 @@
 
 
 <script>
-import upper from 'lodash/startCase';
-
 export default {
   computed: {
     name() {
-      return upper('John Doe');
+      return 'John Doe';
     },
   },
 };
