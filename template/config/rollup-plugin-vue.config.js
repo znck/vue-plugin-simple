@@ -32,14 +32,15 @@ export default {
     const srcDir = path.resolve(projectDir, 'src/');
     const outputs = [];
 
-    each(styles, (data, filename) => {
+    each(styles, (data) => {
+      const filename = data.id
       const output = filename.replace(srcDir, '')
           .replace(/vue$/i, data.lang || 'scss')
           .replace(/^\/|\/$/g, '');
       const dest = path.resolve(stylesDir, output);
       outputs.push(output);
       ensureDirectoryExistence(dest);
-      fs.writeFile(dest, data.content, (err) => {
+      fs.writeFile(dest, data.code, (err) => {
         if (err) throw err;
       });
     });
