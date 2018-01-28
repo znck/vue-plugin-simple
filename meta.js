@@ -12,6 +12,7 @@ name = name && name.toString().trim();
 email = email && email.toString().trim();
 
 module.exports = {
+  skipInterpolation: 'src/**/*.vue',
   prompts: {
     name: {
       required: true,
